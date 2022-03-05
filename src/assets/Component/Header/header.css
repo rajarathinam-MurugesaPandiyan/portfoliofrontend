@@ -1,0 +1,110 @@
+#headerDiv {
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--background-color);
+}
+.headerText {
+  position: absolute;
+  top: 20px;
+  font-weight: 800;
+  margin-left: 40px;
+  color: var(--txt-color);
+}
+.menu {
+  display: none;
+}
+.navItems2 {
+  margin-top: 7px;
+}
+.DownloadSec {
+  margin-top: 7px;
+  width: 70px;
+  height: 30px;
+  border-radius: 3px;
+  border-color: black;
+}
+.navBar {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  display: flex;
+  flex-direction: row;
+}
+.navItems {
+  margin-left: 40px;
+  color: var(--txt-color);
+  width: fit-content;
+  cursor: pointer;
+}
+.navItems:hover {
+  font-weight: 800;
+  color: var(--hover);
+}
+.Download {
+  width: 100px;
+  height: 40px;
+  margin-left: 40px;
+  border-radius: 25px;
+  border-color: black;
+  color: var(--btn-txt);
+  margin-top: -20px;
+  background-color: var(--btn-background);
+  cursor: pointer;
+}
+.selectTheme {
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 40px;
+  color: var(--txt-color);
+  margin-top: 0;
+  cursor: pointer;
+}
+.dropdown {
+  display: flex;
+  flex-direction: row;
+}
+.dropdown:hover {
+  color: var(--hover);
+  font-weight: 800;
+}
+.dropdownContent {
+  background-color: white;
+  color: black;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  display: none;
+}
+.selectTheme:hover .dropdownContent {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .navItems {
+    display: none;
+  }
+  .Download {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    width: 5vw;
+  }
+  .headerText {
+    margin-left: 17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    width: 9vw;
+    right: -20px;
+  }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.App {
+  max-width: 100vw;
+  height: fit-content;
+  overflow: hidden;
+  max-height: fit-content;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  --background-color: darkturquoise;
+  --hover: white;
+  --btn-background: white;
+  --btn-txt: black;
+  --abt-txt: darkturquoise;
+  --txt-color: black;
+}
+body.red {
+  --background-color: #fb4748;
+  --hover: black;
+  --btn-background: black;
+  --btn-txt: white;
+  --abt-txt: #fb4748;
+  --txt-color: white;
+}
+body.darkTheme {
+  --background-color: rgba(0, 0, 0, 0.781);
+  --hover: white;
+  --btn-background: white;
+  --btn-txt: black;
+  --abt-txt: black;
+  --txt-color: white;
+}
+body.light {
+  --background-color: darkturquoise;
+  --hover: white;
+  --btn-background: white;
+  --btn-txt: black;
+  --abt-txt: darkturquoise;
+  --txt-color: black;
+}

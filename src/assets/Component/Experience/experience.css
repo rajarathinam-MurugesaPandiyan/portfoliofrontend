@@ -1,0 +1,64 @@
+#Experience {
+  background-color: var(--background-color);
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.outerDiv{
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cardDiv{
+  width: 30vw;
+  height: 80vh;
+  background-color: var(--background-color);
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.projectTitle{
+  font-size: 20px;
+  color: var(--txt-color);
+}
+.contentDiv{
+
+  width: 50vw;
+
+  display: flex;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 800px){
+  .cardDiv{
+    height: 200px;
+    width: 220px;
+    font-size: 10px;
+    margin-left: 35px;
+  }
+  .contentDiv{
+    font-size: 15px;
+    margin-left: 30px;
+    width: 500px;
+    height: 230px;
+  }
+
+}
+
