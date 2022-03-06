@@ -4,7 +4,7 @@ import IntroText from './assets/Component/IntroText/introText';
 import AboutComponent from './assets/Component/About/about';
 import Experience from './assets/Component/Experience/experience';
 import Contact from "./assets/Component/ContactMe/contact";
-
+import Footer from "./assets/Component/Footer/footer";
 
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
       <AboutComponent/>
       <Experience/>
         <Contact/>
+      <Footer/>
 
 
 

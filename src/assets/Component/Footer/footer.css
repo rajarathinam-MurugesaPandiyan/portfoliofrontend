@@ -1,0 +1,26 @@
+.Footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Thoughts{
+    cursor: pointer;
+    color: var(--txt-color);
+    width: 200px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.Thoughts:hover{
+    color: white;
+}
+
+
+@media screen and (max-width: 850px){
+  .Thoughts{
+      width: 60px;
+      font-size: 8px;
+  }
+}

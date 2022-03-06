@@ -1,6 +1,5 @@
 import React from "react";
 import './about.css';
-
 import developer from '../../images/developer.gif'
 
 
