@@ -9,8 +9,11 @@ import linkedIn from '../../images/linkedin.jpg'
 
 
 const ContactMe = () =>{
-    let imageData = [git , linkedIn , facebook]
-    let LinkData =["https://github.com/rajarathinam-MurugesaPandiyan ",
+
+    let imageData;
+    let LinkData
+    imageData = [git, linkedIn, facebook];
+    LinkData =["https://github.com/rajarathinam-MurugesaPandiyan ",
         "https://www.linkedin.com/in/rajarathinam-murugesan-6907a021a/" ,
         "https://www.facebook.com/profile.php?id=100069458749588" ]
 
@@ -64,7 +67,7 @@ const ContactMe = () =>{
         setImage(imageData[index])
         setLink(LinkData[index]);
 
-    }, []);
+    }, [LinkData , imageData]);
 
     useEffect(() => {
         const intervalID = setInterval(shuffle, 8000);
