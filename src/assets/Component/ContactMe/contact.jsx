@@ -1,6 +1,6 @@
 import  { useCallback, useEffect, useState} from "react";
 import './contact.css'
-import git from '../../images/git.png'
+import git from '../../images/Git.png'
 import facebook from '../../images/facebook.png'
 import linkedIn from '../../images/linkedin.jpg'
 
