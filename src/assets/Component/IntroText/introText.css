@@ -4,10 +4,11 @@
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .introText {
   margin-top: 150px;
-  color: white;
+  color: var(--txt-color);
   width: 65vw;
   text-align: center;
   font-size: 40px;

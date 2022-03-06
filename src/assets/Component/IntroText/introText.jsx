@@ -31,8 +31,6 @@ const IntroText = () =>{
 
     return(
         <div id="introDiv">
-           
-            
              <div className="introText" >
                  <AnimatedText
                  type="words" // animate words or chars

@@ -1,4 +1,4 @@
-.contactDiv{
+#contactDiv{
     width: 100vw;
     height: 100vh;
 }
@@ -14,10 +14,11 @@
 .Label{
     position: relative;
     top: 15px;
-
+    font-weight: 500;
 }
 .inputName{
     margin-top: 20px;
+    font-weight: 700;
     width: 450px;
     height: 50px;
     border-radius: 4px;
@@ -28,6 +29,7 @@
 }
 .description{
     margin-top: 20px;
+    font-weight: 700;
     width: 450px;
     padding-top: 20px;
     border-radius: 4px;
@@ -40,8 +42,12 @@
 }
 .socialContentDiv{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.SocialText{
+
 }
 .SocialContent{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -49,18 +55,28 @@
     height: 300px;
     background-color: var(--background-color);
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.submitButton{
+.socialConnect{
+    width: 10vw;
+    cursor: pointer;
+    border-radius: 80px;
+}
+#submitButton{
     margin-top: 25px;
     width: 150px;
     height: 40px;
     border: 2px solid var(--background-color);
     border-radius: 6px;
     background-color: transparent;
-}
-.submitButton:hover{
-    background-color: var(--background-color);
     cursor: pointer;
+    font-weight: 600;
+}
+#submitButton:hover{
+    background-color: var(--background-color);
+
 }
 
 @media screen and (max-width: 850px){
@@ -79,7 +95,7 @@
         font-size: 12px;
         height: 40px;
     }
-    .submitButton{
+    #submitButton{
         margin-top: 15px;
         width: 20vw;
         height: 5vh;
@@ -88,6 +104,14 @@
         width: 150px;
         height: 150px;
     }
+    .socialConnect{
+        width: 15vw;
+    }
+    .socialContentDiv{
+        justify-content: flex-start;
+
+    }
+
 
 
 }

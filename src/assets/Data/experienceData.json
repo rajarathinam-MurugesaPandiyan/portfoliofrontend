@@ -3,7 +3,7 @@
     {
       "title"  : "Trello (React -Js)",
       "link" : "http://trelloreact.surge.sh/",
-      "content" : "This Is Similar To A Project Management Tool  With Search Filter And DND Operations Without any third Pearty Library"
+      "content" : "This Is A To A Project Management Tool  With Search Filter And DND Operations Without any third Party Library"
     },
     {
       "title"  : "Tip Calulator (Js)",
@@ -14,6 +14,21 @@
       "title" : "Klub(Next-Js)",
       "link" : "https://klub-next.d2v6mruc9hsrc6.amplifyapp.com/" ,
       "content" : "This IS A Financial Website Which is Has Completed The UI Work This Project Was Build in Next-Js"
+    },
+    {
+      "title" : "Django(Python)",
+      "link" : "https://portfolioraja.herokuapp.com/show/" ,
+      "content" : "This Is A backend project for The Current portfolio With Create And Post Methods It was Made In The Django RestApi FrameWork"
+    },
+    {
+      "title" : "chromeExtension(Vanilla Js)",
+      "link" : "" ,
+      "content" : "Having Experience In The Chrome Extension Development With Pure JavaScript The Preview For This Is Not Available"
+    },
+    {
+      "title": "Other Css Modules",
+      "link": "",
+      "content": "Worked in the Css Modules Like Tails Wind , Ant-D  , Bootstrap . Currently The Website Are Not Available"
     }
   ]
 }

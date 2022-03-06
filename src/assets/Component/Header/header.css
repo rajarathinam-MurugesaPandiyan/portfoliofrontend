@@ -2,6 +2,10 @@
   width: 100vw;
   height: 10vh;
   background-color: var(--background-color);
+  position: relative;
+}
+.phoneMenu{
+  display: none;
 }
 .headerText {
   position: absolute;
@@ -21,7 +25,12 @@
   width: 70px;
   height: 30px;
   border-radius: 3px;
-  border-color: black;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.DownloadSec:hover{
+  background-color: var(--background-color);
+
 }
 .navBar {
   position: absolute;
@@ -35,6 +44,7 @@
   color: var(--txt-color);
   width: fit-content;
   cursor: pointer;
+  font-weight: 600;
 }
 .navItems:hover {
   font-weight: 800;
@@ -50,6 +60,7 @@
   margin-top: -20px;
   background-color: var(--btn-background);
   cursor: pointer;
+  font-weight: 600;
 }
 .selectTheme {
   text-align: center;
@@ -61,30 +72,41 @@
   cursor: pointer;
 }
 .dropdown {
-  display: flex;
-  flex-direction: row;
+  font-weight: 600;
 }
 .dropdown:hover {
   color: var(--hover);
   font-weight: 800;
 }
-.dropdownContent {
+#dropdownContent {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  top: 24px;
   background-color: white;
   color: black;
   width: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
+  height: 80px;
   display: none;
+  font-weight: 600;
 }
-.selectTheme:hover .dropdownContent {
+.selectTheme:hover #dropdownContent {
   display: block;
 }
+.phoneTheme{
+  display: none;
+}
+
 
 @media screen and (max-width: 800px) {
   .navItems {
     display: none;
+  }
+  .phoneMenu{
+    display: block;
+  }
+  .navItems2{
+    color: var(--background-color);
   }
   .Download {
     display: none;
@@ -95,16 +117,33 @@
   .menu {
     display: block;
     position: absolute;
+    right: -34px;
     width: 5vw;
+    cursor: pointer;
   }
   .headerText {
     margin-left: 17px;
+  }
+  .phoneTheme{
+    display: block;
+    position: relative;
+    top: 0;
+    right: 30px;
+    width: 5vw;
+    cursor: pointer;
+  }
+  #dropdownContent{
+    top: 35px;
+    right: 20px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .menu {
     width: 9vw;
-    right: -20px;
+  }
+  .phoneTheme{
+    right: 20px;
+    width: 9vw;
   }
 }
