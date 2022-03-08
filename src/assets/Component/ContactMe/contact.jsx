@@ -1,8 +1,6 @@
-import  { useCallback, useEffect, useState} from "react";
+import  {useState} from "react";
 import './contact.css'
-import git from '../../images/Git.png'
-import facebook from '../../images/facebook.png'
-import linkedIn from '../../images/linkedin.jpg'
+
 
 
 
@@ -10,15 +8,6 @@ import linkedIn from '../../images/linkedin.jpg'
 
 const ContactMe = () =>{
 
-    let imageData;
-    let LinkData
-    imageData = [git, linkedIn, facebook];
-    LinkData =["https://github.com/rajarathinam-MurugesaPandiyan ",
-        "https://www.linkedin.com/in/rajarathinam-murugesan-6907a021a/" ,
-        "https://www.facebook.com/profile.php?id=100069458749588" ]
-
-    const [images , setImage] = useState(git);
-    const [Link , setLink] = useState("https://github.com/rajarathinam-MurugesaPandiyan");
     const [providerName ,  setProviderName] = useState("")
     const [providerMail ,  setProviderMail] = useState("")
     const [providerDetail ,  setProviderDetail] = useState("")
@@ -62,20 +51,6 @@ const ContactMe = () =>{
 
     }
 
-    const shuffle = useCallback(() => {
-        const index = Math.floor(Math.random() * imageData.length);
-        setImage(imageData[index])
-        setLink(LinkData[index]);
-
-    }, [LinkData , imageData]);
-
-    useEffect(() => {
-        const intervalID = setInterval(shuffle, 8000);
-        return () => clearInterval(intervalID);
-    }, [shuffle])
-
-
-
     return(
       <div id="contactDiv">
                <div className="mainForm">
@@ -91,11 +66,7 @@ const ContactMe = () =>{
                           <button id="submitButton" onClick={(e)=>submit(e)}>Submit</button>
                        </form>
                    </div>
-                   <div className="socialContentDiv">
-                       <div className='SocialContent'>
-                           <a href={Link} target={"_blank"} rel="noreferrer"> <img className="socialConnect" src={images} alt="git"/></a>
-                       </div>
-                   </div>
+
                </div>
       </div>
     );
