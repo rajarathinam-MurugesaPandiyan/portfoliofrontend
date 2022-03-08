@@ -1,10 +1,23 @@
 .Footer{
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     background-color: var(--background-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.content{
+    width : 2vw ;
+    border-radius : 25px;
+}
+.SocialImage{
+    width: 250px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+
 }
 .Thoughts{
     cursor: pointer;
@@ -16,6 +29,10 @@
 .Thoughts:hover{
     color: white;
 }
+.upImage{
+    width: 5vw;
+    border-radius: 25px;
+}
 
 
 @media screen and (max-width: 850px){
@@ -23,4 +40,14 @@
       width: 60px;
       font-size: 8px;
   }
+    .SocialImage{
+        width: 30vw;
+    }
+    .content{
+        width: 8vw;
+    }
+    .upImage{
+        width: 10vw;
+        border-radius: 25px;
+    }
 }

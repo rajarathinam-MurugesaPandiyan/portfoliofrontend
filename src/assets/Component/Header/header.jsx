@@ -59,17 +59,15 @@ function Header () {
                          </div>
                     </div>
                 </div>
-               <button onClick={()=>{alert("Still In Progress I'm Updating My Resume 😅")}} className="Download" >Resume</button>
                <img className="phoneTheme" onClick={changeTheme} src={Theme} alt="Theme" />
                <img className="menu" onClick={()=> setToggleSec(!toggleSec)} style = {{ borderRadius : "25px" }} src={menu} alt="Menus"/>
            </div>
         </div>
 
-        {toggleSec?<div  style={{ display : "flex" , flexDirection : "column" , alignItems : "center" , height : "150px"  , width : "100vw" , backgroundColor : "white" }} >
+        {toggleSec?<div  style={{ display : "flex" , flexDirection : "column" , alignItems : "center" , height : "100px"  , width : "100vw" , backgroundColor : "white" }} >
                  <div className="navItems2"> <Link to="About" spy={true} smooth={true}> About </Link></div>
                   <div className="navItems2"> <Link to="Experience" spy={true} smooth={true}>Experience</Link></div>
                  <div className="navItems2" ><Link to="contactDiv"  spy={true} smooth={true}>Contact Me</Link></div>
-               <button onClick={()=>{alert("Still In Progress I'm Updating My Resume 😅")}} className="DownloadSec" >Resume</button>
         </div> : null}
            </>
     );

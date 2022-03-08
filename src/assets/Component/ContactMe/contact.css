@@ -1,16 +1,18 @@
 #contactDiv{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .mainForm{
-    display: flex;
     height: 100vh;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.formDiv{
-    margin-top: 80px;
-}
+
 .Label{
     position: relative;
     top: 15px;
@@ -49,16 +51,7 @@
 .SocialText{
 
 }
-.SocialContent{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 300px;
-    height: 300px;
-    background-color: var(--background-color);
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .socialConnect{
     width: 10vw;
     cursor: pointer;
@@ -80,9 +73,7 @@
 }
 
 @media screen and (max-width: 850px){
-    .formDiv{
-        margin-top: 0px;
-    }
+
     .inputName{
         padding-left: 10px;
         font-size: 12px;
@@ -92,6 +83,7 @@
     .description{
         width: 80vw;
         padding-left: 10px;
+        padding-top: 10px;
         font-size: 12px;
         height: 40px;
     }
@@ -100,17 +92,7 @@
         width: 20vw;
         height: 5vh;
     }
-    .SocialContent{
-        width: 150px;
-        height: 150px;
-    }
-    .socialConnect{
-        width: 15vw;
-    }
-    .socialContentDiv{
-        justify-content: flex-start;
 
-    }
 
 
 
